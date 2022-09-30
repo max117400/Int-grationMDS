@@ -1,0 +1,44 @@
+.carre{
+    background-color: transparent;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;   
+    color: transparent;
+    transition: all 0,35s ease-in-out;
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+.carre:hover{
+    background-color:rgb(255, 254, 253);
+    width: 400px;
+    height: 400px;  
+}
+p{
+    background-color: transparent;
+    transition: 1s;
+    opacity:0 ;
+    transform:rotate(0deg);
+}
+body:hover p {
+    opacity: 1 ;
+    transition-delay: 1s;
+    color: brown;
+    transform:rotate(360deg);
+}
+body{
+    height: 100vh;
+    margin: 0%;
+}
+body:hover .carre {
+background-color: rgb(57, 19, 195);
+position: absolute; 
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+transition: 1s;
+;
+}
